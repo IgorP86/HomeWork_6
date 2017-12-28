@@ -40,7 +40,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -64,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="96dp"
         android:background="@android:color/transparent"
         android:fontFamily="serif"
         android:text="@string/button_registration"
@@ -98,31 +97,31 @@
             android:id="@+id/btn_vk"
             android:layout_width="40pt"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/goth"
-            android:textSize="17pt"
-            android:background="@android:color/transparent"
             android:layout_weight="1"
-            android:text="Vk" />
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/goth"
+            android:text="Vk"
+            android:textSize="17pt" />
 
         <Button
             android:id="@+id/btn_facebook"
             android:layout_width="40pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/goth"
-            android:textSize="17pt"
             android:background="@android:color/transparent"
-            android:text="f" />
+            android:fontFamily="@font/goth"
+            android:text="f"
+            android:textSize="17pt" />
 
         <Button
             android:id="@+id/btn_google"
             android:layout_width="40pt"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/goth"
-            android:textSize="17pt"
-            android:background="@android:color/transparent"
             android:layout_weight="1"
-            android:text="g+" />
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/goth"
+            android:text="g+"
+            android:textSize="17pt" />
     </LinearLayout>
 
 
