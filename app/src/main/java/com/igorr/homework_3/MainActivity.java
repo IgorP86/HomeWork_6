@@ -3,6 +3,8 @@ package com.igorr.homework_3;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -25,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
         btnVk = findViewById(R.id.btn_vk);
         btnFacebook = findViewById(R.id.btn_facebook);
         btnGoogle = findViewById(R.id.btn_google);
-
         final Intent smsConfirm = new Intent(this, confirmActivity.class);
+
+
 
         OnClickListener onClickListener = new OnClickListener() {
             @Override
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.btn_registration: {
-
+                        Snackbar.make(v, "проверочный код: 123456", Snackbar.LENGTH_INDEFINITE).show();
                         break;
                     }
                 }
