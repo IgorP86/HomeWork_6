@@ -63,12 +63,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="136dp"
         android:background="@android:color/transparent"
         android:fontFamily="serif"
         android:text="@string/button_registration"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -84,7 +84,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="102dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="304dp"
@@ -95,32 +95,27 @@
 
         <Button
             android:id="@+id/btn_vk"
-            android:layout_width="40pt"
-            android:layout_height="wrap_content"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/goth"
-            android:text="Vk"
+            android:background="@mipmap/ic_vc_foreground"
+
             android:textSize="17pt" />
 
         <Button
             android:id="@+id/btn_facebook"
-            android:layout_width="40pt"
-            android:layout_height="wrap_content"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/goth"
-            android:text="f"
+            android:background="@mipmap/ic_f_foreground"
             android:textSize="17pt" />
 
         <Button
             android:id="@+id/btn_google"
-            android:layout_width="40pt"
-            android:layout_height="wrap_content"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/goth"
-            android:text="g+"
+            android:background="@mipmap/ic_google_foreground"
             android:textSize="17pt" />
     </LinearLayout>
 

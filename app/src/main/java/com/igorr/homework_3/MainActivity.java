@@ -4,14 +4,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ActionMenuView;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnContinue;
@@ -60,16 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         };
-        ActionMenuView actM = new ActionMenuView(this);
         btnContinue.setOnClickListener(onClickListener);
         btnRegistration.setOnClickListener(onClickListener);
         btnVk.setOnClickListener(onClickListener);
         btnFacebook.setOnClickListener(onClickListener);
         btnGoogle.setOnClickListener(onClickListener);
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add("aaa");
-        return super.onCreateOptionsMenu(menu);
     }
 }

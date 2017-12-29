@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
@@ -18,32 +18,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="267dp"
-            android:layout_height="58dp"
-            android:text="Button"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="30dp"
-            />
-
-        <Button
             android:id="@+id/button2"
-            android:layout_width="164dp"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteX="178dp" />
+            android:layout_width="43dp"
+            android:layout_height="37dp"
+            android:layout_gravity="bottom"
+            android:text="B"
+            app:layout_anchor="@id/textView2"
+            app:layout_anchorGravity="bottom" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Вам отправлена SMS с кодом"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.04"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_width="122dp"
+            android:layout_height="34dp"
+            android:text="Вам отправлена SMS с кодом" />
     </android.support.design.widget.CoordinatorLayout>
+
 </android.support.constraint.ConstraintLayout>
