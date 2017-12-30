@@ -4,24 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".confirmActivity">
+    tools:context=".ConfirmActivity">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вам отправлено SMS с кодом"
+            android:fontFamily="@font/goth"
+            android:textSize="25sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="20sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70sp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Я принимаю пользовательское соглашение"
+            tools:ignore="HardcodedText"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="130sp"/>
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:id="@+id/button"
+            android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Войти"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170sp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
 
-        </LinearLayout>
     </android.support.design.widget.CoordinatorLayout>
 
 </android.support.constraint.ConstraintLayout>

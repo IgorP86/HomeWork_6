@@ -19,9 +19,16 @@
         </activity>
 
         <activity
-            android:name=".confirmActivity"
+            android:name=".ConfirmActivity"
             android:parentActivityName=".MainActivity"
             android:label="@string/authorization">
+        </activity>
+
+        <activity
+            android:name=".Contacts"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/contacts">
+
         </activity>
 
         <meta-data

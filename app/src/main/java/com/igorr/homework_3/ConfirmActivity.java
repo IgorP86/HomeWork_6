@@ -17,13 +17,14 @@ import android.widget.TextView;
  * Created by Igorr on 25.12.2017.
  */
 
-public class confirmActivity extends AppCompatActivity{
+public class ConfirmActivity extends AppCompatActivity{
    // @Override
     protected void onCreate (Bundle savedInstanceState) throws NullPointerException {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.confirm_activity);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
 
     }
