@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfirmActivity">
+    tools:context=".ConfirmActivity"
+    android:id="@+id/layout">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
             tools:ignore="HardcodedText" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/enter_your_code_here"
             android:layout_width="343dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -33,21 +34,22 @@
             android:inputType="number" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkAccepted"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="130sp"
             android:text="Я принимаю пользовательское соглашение"
             tools:ignore="HardcodedText"
-            android:layout_marginStart="24sp"
-            android:layout_marginTop="130sp"/>
+            android:onClick="onCheckboxClicked"/>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button_enter"
             android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:text="Войти"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="170sp"/>
+            android:layout_marginTop="170sp"
+            android:text="Войти" />
 
 
     </android.support.design.widget.CoordinatorLayout>
