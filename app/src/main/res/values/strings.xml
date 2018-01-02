@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeWork_3</string>
+    <string name="authorization"><![CDATA[Авторизация]]></string>
+    <string name="next_activity"><![CDATA[Контакты]]></string>
+    <string name="phone_template">8-xxx-xxx-xx-xx</string>
+    <string name="button_registration">Зарегистрироваться</string>
+    <string name="button_continue"><![CDATA[продолжить]]></string>
+    <string name="contacts">Контакты</string>
+</resources>
