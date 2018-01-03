@@ -40,11 +40,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="170dp"
+            android:fontFamily="@font/washington"
             android:onClick="onCheckboxClicked"
             android:text="Я принимаю пользовательское соглашение"
-            android:fontFamily="@font/washington"
-            android:textSize="11sp"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:textSize="11sp"/>
 
         <Button
             android:id="@+id/button_enter"
