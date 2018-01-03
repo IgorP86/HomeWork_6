@@ -40,8 +40,6 @@ public class ConfirmActivity extends AppCompatActivity {
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String str = enterYourCodeHere.getText().toString();
-
                 if ((v == btnEnter) && !(enterYourCodeHere.getText().toString().isEmpty())) {
                     snbImDone.setAction("Ок", new View.OnClickListener() {
                         @Override

@@ -2,10 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfirmActivity"
-    android:id="@+id/layout">
+    tools:context=".ConfirmActivity">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -17,11 +17,11 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/Washington"
             android:text="Вам отправлено SMS с кодом"
-            android:fontFamily="@font/goth"
-            android:textSize="25sp"
-            android:layout_marginStart="24sp"
-            android:layout_marginTop="20sp"
+            android:textSize="18sp"
             tools:ignore="HardcodedText" />
 
         <EditText
@@ -29,27 +29,32 @@
             android:layout_width="343dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70sp"
+            android:layout_marginTop="80dp"
             android:ems="10"
+            android:fontFamily="@font/Washington"
             android:inputType="number" />
 
         <CheckBox
             android:id="@+id/checkAccepted"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24sp"
-            android:layout_marginTop="130sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="170dp"
+            android:fontFamily="@font/Washington"
+            android:onClick="onCheckboxClicked"
             android:text="Я принимаю пользовательское соглашение"
-            tools:ignore="HardcodedText"
-            android:onClick="onCheckboxClicked"/>
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/button_enter"
-            android:layout_width="250sp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="170sp"
-            android:text="Войти" />
+            android:layout_marginTop="210dp"
+            android:fontFamily="@font/Washington"
+            android:text="Войти"
+            tools:ignore="HardcodedText" />
 
 
     </android.support.design.widget.CoordinatorLayout>

@@ -33,8 +33,19 @@ public class Person {
         return telNumber;
     }
 
+    //Случайный номер
+    public static String generateRandTel() {
+        String ret = "8 9";
+        Double gen = Math.random();
+        for (int i = 2; i < 5; i++) {
+            ret = ret.concat(gen.toString().substring(2, i + 2));
+            ret += " ";
+        }
+        return ret;
+    }
+
     //Конструктор класса
-    public Person (String name, String telNumber, int photoId){
+    public Person(String name, String telNumber, int photoId) {
         this.name = name;
         this.telNumber = telNumber;
         this.photoId = photoId;

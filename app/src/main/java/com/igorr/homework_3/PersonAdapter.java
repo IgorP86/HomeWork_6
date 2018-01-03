@@ -5,8 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -31,12 +29,12 @@ public class PersonAdapter extends RecyclerView.Adapter<CustomViewHolder> {
         return new CustomViewHolder(thisItemsView);
     }
 
-    //
+    //Find out the data, based on this view holder's position
     @Override
     public void onBindViewHolder(CustomViewHolder holder, int position) {
-        // Find out the data, based on this view holder's position
         holder.name.setText(personArrayList.get(position).getName());
         holder.number.setText(personArrayList.get(position).getTelNumber());
+        holder.imageView.setImageResource(personArrayList.get(position).getPhotoId());
     }
 
     //возвращает количество объектов в списке

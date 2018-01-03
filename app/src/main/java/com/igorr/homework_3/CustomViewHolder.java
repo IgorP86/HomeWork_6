@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 /**
  * Created by Igorr on 02.01.2018.
- *
  */
 
 
@@ -19,6 +18,7 @@ public class CustomViewHolder extends RecyclerView.ViewHolder {
         super(thisItemsView);
         this.name = thisItemsView.findViewById(R.id.name);
         this.number = thisItemsView.findViewById(R.id.number);
+        this.imageView = thisItemsView.findViewById(R.id.imageView);
     }
 
 }

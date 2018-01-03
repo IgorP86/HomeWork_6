@@ -19,20 +19,20 @@ public class Contacts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contacts);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        //Заполнение списка
-        listInit();
         contactsView = findViewById(R.id.contacts_view);
+
+        //Автозаполнение списка контактов
+        listInit();
         //creates an adapter
-        PersonAdapter adapter = new PersonAdapter(this,this.personArrayList);
+        PersonAdapter adapter = new PersonAdapter(this, this.personArrayList);
         //attaches the adapter to the RecyclerView
         contactsView.setAdapter(adapter);
 
     }
 
-    private void listInit(){
+    private void listInit() {
         for (int i = 0; i != 20; i++) {
-            personArrayList.add(new Person("Анонимус" + i, "12234565", 1));
+            personArrayList.add(new Person("Игорь Александрович " + i, Person.generateRandTel(), R.mipmap.ic_google_foreground));
         }
     }
 }
