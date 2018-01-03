@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/Washington"
+            android:fontFamily="@font/washington"
             android:text="Вам отправлено SMS с кодом"
             android:textSize="18sp"
             tools:ignore="HardcodedText" />
@@ -31,7 +31,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="80dp"
             android:ems="10"
-            android:fontFamily="@font/Washington"
+            android:fontFamily="@font/washington"
             android:inputType="number" />
 
         <CheckBox
@@ -40,9 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="170dp"
-            android:fontFamily="@font/Washington"
             android:onClick="onCheckboxClicked"
             android:text="Я принимаю пользовательское соглашение"
+            android:fontFamily="@font/washington"
             android:textSize="11sp"
             tools:ignore="HardcodedText" />
 
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="210dp"
-            android:fontFamily="@font/Washington"
+            android:fontFamily="@font/washington"
             android:text="Войти"
             tools:ignore="HardcodedText" />
 
