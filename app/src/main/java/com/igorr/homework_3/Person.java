@@ -37,8 +37,9 @@ public class Person {
     public static String generateRandTel() {
         String ret = "8 9";
         Double gen = Math.random();
-        for (int i = 2; i < 5; i++) {
-            ret = ret.concat(gen.toString().substring(2, i + 2));
+
+        for (int i = 0; i < 3; i++) {
+            ret = ret.concat(gen.toString().substring(i + 2, 2*i+4));
             ret += " ";
         }
         return ret;

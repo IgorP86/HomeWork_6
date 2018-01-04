@@ -32,7 +32,7 @@ public class Contacts extends AppCompatActivity {
 
     private void listInit() {
         for (int i = 0; i != 20; i++) {
-            personArrayList.add(new Person("Игорь Александрович " + i, Person.generateRandTel(), R.mipmap.ic_google_foreground));
+            personArrayList.add(new Person("Контакт " + i, Person.generateRandTel(), R.mipmap.ic_google_foreground));
         }
     }
 }
