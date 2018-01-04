@@ -43,8 +43,8 @@
             android:fontFamily="@font/washington"
             android:onClick="onCheckboxClicked"
             android:text="Я принимаю пользовательское соглашение"
-            tools:ignore="HardcodedText"
-            android:textSize="11sp"/>
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/button_enter"

@@ -39,7 +39,7 @@ public class Person {
         Double gen = Math.random();
 
         for (int i = 0; i < 3; i++) {
-            ret = ret.concat(gen.toString().substring(i + 2, 2*i+4));
+            ret = ret.concat(gen.toString().substring(i + 2, 2 * i + 4));
             ret += " ";
         }
         return ret;

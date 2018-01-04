@@ -35,13 +35,13 @@ public class ConfirmActivity extends AppCompatActivity {
         if (!checkBox.isChecked()) btnEnter.setEnabled(false);
 
         final Intent contacts = new Intent(this, Contacts.class);
-        final Snackbar snbImDone = Snackbar.make(findViewById(R.id.layout), "Я молодец", Snackbar.LENGTH_INDEFINITE);
+        final Snackbar snbImDone = Snackbar.make(findViewById(R.id.layout), "Я молодец!", Snackbar.LENGTH_INDEFINITE);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if ((v == btnEnter) && !(enterYourCodeHere.getText().toString().isEmpty())) {
-                    snbImDone.setAction("Ок", new View.OnClickListener() {
+                    snbImDone.setAction("Далее...", new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             startActivity(contacts);
